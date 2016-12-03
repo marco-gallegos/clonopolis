@@ -1,0 +1,21 @@
+.tira_entre_slider{
+	height: 5%;
+	#font-size: 1.5em;
+	//background-color: rgba(0, 187, 152, 0.54);
+}
+.container{
+	background-image: url('/pag/img/bg.jpg');
+}
+.estrellas{
+	font-size: 3em;
+}
+.texto_estrellas{
+	font-size: 2em;
+}
+.nosotros .glyphicon{
+	font-size: 2em;
+}
+.recuadro_nosotros{
+	background-color: rgba(224, 241, 255, 0.54);
+	min-height: 14.5em;
+}

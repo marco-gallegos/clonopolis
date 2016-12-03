@@ -1,0 +1,12 @@
+  <h3 id="titulo_tabla"></h3>
+  <div class="container">
+    <div id="output"></div>  
+  </div>
+
+  <script id="source" language="javascript" type="text/javascript">
+  console.log('/pag/php/mostrar.php');
+  var titulo = "boletos";
+        var url = "../pag/php/mostrar_" + titulo + ".php";
+        $("#titulo_tabla").html(primeraLetraMayuscula(titulo) + ': ');
+        $('#output').html('<iframe src="'+ url +'" width="100%" height="100%" frameborder="0" allowfullscreen sandbox></iframe>');
+</script>

@@ -1,0 +1,49 @@
+  <h3 id="titulo_tabla"></h3>
+  <div class="container">
+    <div id="output"></div>  
+  </div>
+
+  <script id="source" language="javascript" type="text/javascript">
+  console.log('/pag/php/mostrar.php');
+  var titulo = "empleados";
+        var url = "../pag/php/mostrar_" + titulo + ".php";
+        $("#titulo_tabla").html(primeraLetraMayuscula(titulo) + ': ');
+        $('#output').html('<iframe src="'+ url +'" width="100%" height="100%" frameborder="0" allowfullscreen sandbox></iframe>');
+
+  /*
+  $(function () 
+  {
+    //-----------------------------------------------------------------------
+    // 2) Send a http request with AJAX http://api.jquery.com/jQuery.ajax/
+    //-----------------------------------------------------------------------
+    $.ajax({                                      
+      url: '/pag/php/mostrar.php',                  //the script to call to get data          
+      data: "",                        //you can insert url argumnets here to pass to api.php
+                                       //for example "id=5&parent=6"
+      dataType: 'json',                //data format      
+      success: function(data)          //on recieve of reply
+      {
+        /*console.log(data);
+        var num_de_objetos = Object.keys(data).length;
+        console.log(num_de_objetos);
+        data.replace('['," ");
+        console.log(data);
+        /*for (var i = num_de_objetos - 1; i >= 0; i--) {
+          if (i%2 == 0) {
+            console.log(i + "Es par");
+          }
+          data[i];
+        }*/
+        /*var id = data[0-3];              //get id
+        var vname = data['nombre'];           //get name
+        //--------------------------------------------------------------------
+        // 3) Update html content
+        ///--------------------------------------------------------------------
+              //$('#output').html("<b>id: </b>"+id+"<b> name: </b>"+vname); //Set output element html
+        //recommend reading up on jquery selectors they are awesome 
+        // http://api.jquery.com/category/selectors/
+      } 
+    });
+  }); */
+
+  </script>
