@@ -11,7 +11,8 @@ Interfaz escrita con :
 - php7
 
 ##### instalacion :
-´´´
+```
+
 sudo apt install mariadb-server php7
 
-´´´
+```
